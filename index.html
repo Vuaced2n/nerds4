@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Нёрдс</title>
+	<!-- Подключение шрифтов -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=cyrillic" rel="stylesheet">
+	<!-- Подключение Normalize.css -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Подключение собственных стилей -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="main-header">
+		<nav class="header-wrapper wrapper-content">
+			<a class="header-logo-nav">
+				<img src="img/nerds-logo.svg" width="160" height="67" alt="Логотип дизайн-студии Nёrd's">
+			</a>
+			<ul class="header-site-nav">
+				<li><a href="#">Студия</a></li>
+				<li><a href="#">Клиенты</a></li>
+				<li><a href="catalog.html">Магазин</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+			<ul class="header-user-nav">
+				<li class="cart"><a href="#">Корзина</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="slider">
+		<div class="wrapper-content">
+			<h2 class="visually-hidden">Преимущества</h2>
+			<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+			<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+			<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+			<div class="slider-controls">
+				<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+				<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+				<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+			</div>
+			<ul class="slider-list">
+				<li class="slider-item">
+					<h3>Долго, дорого,<br> скрупулезно.</h3>
+					<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
+					<a class="slider-item-button button" href="#">Узнать больше</a>
+				</li>
+				<li class="slider-item">
+					<h3>Любим математику как никто другой</h3>
+					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a class="slider-item-button button" href="#">Узнать больше</a>
+				</li>
+				<li class="slider-item">
+					<h3>Только ночь,<br> только хардкор</h3>
+					<p>Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается.</p>
+					<a class="slider-item-button button" href="#">Узнать больше</a>
+				</li>
+			</ul>  
+		</div>
+	</section>
+	<main>
+		<div class="wrapper-content">
+			<section class="service">
+				<h2 class="visually-hidden">Услуги</h2>
+				<ul class="service-item">
+					<li>
+						<img src="img/service/web-site.png" width="300" height="146" alt="Веб-сайты">
+						<h3>Веб-сайты</h3>
+						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+						<a href="#" class="button service-item-button pink">Заказать</a>
+					</li>
+					<li>
+						<img src="img/service/applications.png" width="300" height="146" alt="Приложения">
+						<h3>Приложения</h3>
+						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+						<a href="#" class="button service-item-button green">Заказать</a>
+					</li>
+					<li>
+						<img src="img/service/presentations.png" width="300" height="146" alt="Презентации">
+						<h3>Презентации</h3>
+						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+						<a href="#" class="button service-item-button yellow">Заказать</a>
+					</li>
+				</ul>
+			</section>
+		</div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+	</main>
 
-  </body>
+	<script src="js/script.js"></script>
+</body>
 </html>
