@@ -29,7 +29,9 @@
 	</header>
 	<main>
 		<section class="intro">
-			<h1 class="page-title">Магазин готовых шаблонов</h1>
+			<div class="wrapper-content">
+				<h1 class="page-title">Магазин готовых шаблонов</h1>
+			</div>
 		</section>
 		<div class="catalog wrapper-content">
 			<section class="catalog-filter">
@@ -208,7 +210,7 @@
 			<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0da719b83099ced85a7360a81502c2350b32536cdaef0779f9d6f8efe23a999d&amp;source=constructor"
 			width="1440" height="416"></iframe>
 			<img src="img/map.jpg" width="1440" height="416" alt="Расположение дизайн-студии на карте">
-			<section class="map-container">
+			<section class="map-container wrapper-content">
 				<h2 class="visually-hidden">Наши контактные данные</h2>
 				<div class="map-address">
 					<b>NЁRDS DESIGN STUDIO</b>
@@ -237,15 +239,17 @@
 	<section class="modal">
 		<h2>Напишите нам</h2>
 		<form class="send-us-form" action="https://echo.htmlacademy.ru" method="post">
-			<p class="send-us-name">
-				<label for="send-us-name">Ваше имя:</label>
-				<input id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
-			</p>
-			<p class="send-us-email">
-				<label for="send-us-email">Ваш e-mail:</label>
-				<input id="send-us-email" type="email" name="send-us-email"
-				placeholder="email@example.com">
-			</p>
+			<div class="wrapper-modal">
+				<p class="send-us-name">
+					<label for="send-us-name">Ваше имя:</label>
+					<input id="send-us-name" type="text" name="send-us-name" placeholder="Имя Фамилия">
+				</p>
+				<p class="send-us-email">
+					<label for="send-us-email">Ваш e-mail:</label>
+					<input id="send-us-email" type="email" name="send-us-email"
+					placeholder="email@example.com">
+				</p>
+			</div>
 			<p class="send-us-text">
 				<label for="send-us-text">Текст письма:</label>
 				<textarea id="send-us-text" name="send-us-text" placeholder="В свободной форме" rows="5"></textarea>

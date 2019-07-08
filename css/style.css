@@ -180,6 +180,7 @@ a{
     padding: 8px;
 
     cursor: pointer;
+    vertical-align: top;
 
     border-radius: 50%;
 }
@@ -269,6 +270,8 @@ a{
     max-width: 600px;
     margin: 0;
     margin-bottom: 27px;
+
+    color: #000;
 }
 
 .slider-item p{
@@ -382,6 +385,8 @@ a{
 
     letter-spacing: normal;
     text-transform: uppercase;
+
+    color: #000;
 }
 
 .service-item p{
@@ -475,6 +480,8 @@ a{
     line-height: 45px;
 
     margin-bottom: 34px;
+
+    color: #000;
 }
 .about-description-text{
     margin-bottom: 22px;
@@ -488,6 +495,8 @@ a{
 
     vertical-align: top;
     text-transform: uppercase;
+
+    color: #000;
 }
 
 .about-description ul{
@@ -525,6 +534,8 @@ a{
 
     text-align: center;
     text-transform: uppercase;
+
+    color: #000;
 }
 .about-facts ul{
     display: -webkit-box;
@@ -672,9 +683,9 @@ a{
 .map-container{
     position: absolute;
     z-index: 30;
-    top: 2px;
+    top: -8px;
     right: 0;
-    left: 140px;
+    left: 0;
 }
 
 .map-address{
@@ -702,6 +713,8 @@ a{
     margin-bottom: 24px;
 
     vertical-align: top;
+
+    color: #000;
 }
 
 .map-address .address{
@@ -772,13 +785,8 @@ a{
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
-
-.footer-social li:first-child{
-    margin-left: 0;
-}
-
 .footer-social li{
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .footer-social a::after{
@@ -852,6 +860,8 @@ a{
 
     margin-top: 4px;
     margin-bottom: 10px;
+
+    color: #000;
 }
 
 .footer-discount span{
@@ -878,6 +888,7 @@ a{
     font-family: Roboto, Arial, sans-serif;
     font-size: 55px;
     font-weight: 500;
+    line-height: 55px;
 
     text-align: center;
 }
@@ -984,6 +995,14 @@ a{
 .catalog-popup-caption a{
     color: #000;
 }
+.catalog-popup-caption:hover,
+.catalog-popup-caption:focus{
+    color: #fb565a;
+}
+.catalog-popup-caption:active{
+    color: rgba(0, 0, 0, 0.3);
+}
+
 
 .catalog-popup-caption{
     font-size: 18px;
@@ -1211,6 +1230,7 @@ a{
 
     width: 50%;
 
+    vertical-align: top;
     text-transform: uppercase;
 }
 
@@ -1571,7 +1591,7 @@ a{
 .modal{
     position: fixed;
     z-index: 50;
-    bottom: 178px;
+    top: 120px;
     left: 50%;
 
     display: none;
@@ -1601,7 +1621,11 @@ a{
     -webkit-animation: shake 0.6s;
             animation: shake 0.6s;
 }
+.wrapper-modal{
+    display: flex;
 
+    justify-content: space-between;
+}
 .modal h2{
     font-size: 45px;
     font-weight: 500;
@@ -1616,7 +1640,7 @@ a{
 
     position: absolute;
     top: 79px;
-    right: 90px;
+    right: 100px;
 
     width: 21px;
     height: 21px;
@@ -1660,7 +1684,7 @@ a{
 .send-us-form textarea{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 760px;
+    width: 740px;
     padding-top: 11px;
     padding-bottom: 13px;
     padding-left: 15px;
