@@ -42,10 +42,8 @@ a{
     display: flex;
 
     -webkit-box-pack: start;
-
-        -ms-flex-pack: start;
-
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
 }
 .header-logo-nav{
     padding-top: 48px;
@@ -62,9 +60,7 @@ a{
     line-height: 30px;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
 
     padding: 0;
@@ -76,15 +72,13 @@ a{
     text-transform: uppercase;
 
     -webkit-box-pack: start;
-
-        -ms-flex-pack: start;
-
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
 .header-site-nav li{
-    margin-left: 46px;
+    margin-left: 44px;
 }
 .header-site-nav li:first-child{
     margin-left: 0;
@@ -171,9 +165,7 @@ a{
     height: 18px;
 
     -webkit-transform: translateX(-50%);
-
         -ms-transform: translateX(-50%);
-
             transform: translateX(-50%);
     text-align: center;
 }
@@ -342,10 +334,8 @@ a{
     display: flex;
 
     -webkit-box-pack: justify;
-
-        -ms-flex-pack: justify;
-
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 }
@@ -366,8 +356,10 @@ a{
     list-style: none;
 }
 .service-item li{
+    padding-bottom: 10px;
+
     -ms-flex-preferred-size: 300px;
-        flex-basis: 300px;
+    flex-basis: 300px;
 }
 
 .service-item h3,
@@ -472,11 +464,10 @@ a{
     color: #283136;
 
     -ms-flex-preferred-size: 660px;
-
-        flex-basis: 660px;
+    flex-basis: 660px;
     -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
 }
 .about-description-title{
     font-size: 45px;
@@ -548,10 +539,8 @@ a{
     color: #283136;
 
     -webkit-box-pack: justify;
-
-        -ms-flex-pack: justify;
-
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .about-facts li{
     font-weight: 400;
@@ -578,8 +567,7 @@ a{
     background-position: 10% 37px;
 
     -ms-flex-preferred-size: 365px;
-
-        flex-basis: 365px;
+    flex-basis: 365px;
 }
 .table-specifications{
     padding-top: 47px;
@@ -606,11 +594,10 @@ a{
     list-style: none;
 
     -ms-flex-wrap: wrap;
-
         flex-wrap: wrap;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 .brands-item{
     position: relative;
@@ -649,9 +636,7 @@ a{
     position: relative;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
 
     height: 416px;
@@ -659,10 +644,8 @@ a{
     background-color: #b5b5b5;
 
     -webkit-box-pack: center;
-
-        -ms-flex-pack: center;
-
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .map-wrapper img{
@@ -698,7 +681,6 @@ a{
     line-height: 18px;
 
     -webkit-box-sizing: border-box;
-
             box-sizing: border-box;
     width: 319px;
     margin-top: 55px;
@@ -717,7 +699,7 @@ a{
 
     display: inline-block;
 
-    margin-bottom: 10px;
+    margin-bottom: 24px;
 
     vertical-align: top;
 }
@@ -750,8 +732,8 @@ a{
 
 .map-wrapper{
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 /*social*/
 .footer-social{
@@ -788,15 +770,14 @@ a{
     list-style: none;
 
     -ms-flex-wrap: wrap;
-
         flex-wrap: wrap;
 }
 
-.footer-social li:nth-child(2){
-    margin-left: 13px;
+.footer-social li:first-child{
+    margin-left: 0;
 }
 
-.footer-social li:nth-child(3){
+.footer-social li{
     margin-left: 10px;
 }
 
@@ -906,10 +887,8 @@ a{
     display: flex;
 
     -webkit-box-pack: center;
-
-        -ms-flex-pack: center;
-
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 .catalog-list{
     display: -webkit-box;
@@ -956,7 +935,7 @@ a{
     display: -ms-flexbox;
     display: flex;
 
-    padding-left: 278px;
+    padding-left: 276px;
 
     list-style: none;
 
@@ -1143,7 +1122,9 @@ a{
 .sort-list-item:active{
     color: #000;
 }
-
+.sort-list-item--active{
+    color: #000;
+}
 /*Сложный фильтр*/
 .filter-item{
     width: 322px;
@@ -1258,11 +1239,10 @@ a{
     font-weight: 500;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
 
+    max-width: 760px;
     margin: 0;
     padding-top: 7px;
     padding-bottom: 52px;
@@ -1270,13 +1250,15 @@ a{
 
     list-style: none;
 
+    flex-wrap: wrap;
+    justify-content: flex-start;
     -webkit-box-align: center;
-
-        -ms-flex-align: center;
-
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-
+.pagination-item{
+    padding-bottom: 10px;
+}
 .pagination-item a,
 .pagination-item a:link,
 .pagination-item a:visited{
